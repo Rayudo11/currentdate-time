@@ -17,8 +17,25 @@ const displayDate = () => {
 // Write a JavaScript program to convert a number to a string.
 
 
+const numToString = function (num) {
+ let newString = num.toString()
+ console.log (newString)
+ return newString
+}
+
+numToString(129)
+
+
 
 // Write a JavaScript program to convert a string to the number.
+ 
+const stringToNum = function (string) {
+  let newNum =parseInt(string)
+  console.log (newNum)
+  return newNum
+}
+
+stringToNum("12")
 
 
 
@@ -29,23 +46,46 @@ const displayDate = () => {
   // * Number
   // * NaN
   // * String
-  
+ const dataSorter = function (myValue) {
+   if (typeof(myValue) === "boolean") {
+   return ("Its a boolean")}
+  }
+ 
+   
+dataSorter(true)
 
   
 // Write a JavaScript program that adds 2 numbers together.
+let num1 = 12;
+let num2 = 10;
 
+const sum = num1 + num2;
 
+console.log (sum)
 
 // Write a JavaScript program that runs only when 2 things are true.
+const twoTrue = function (imHappy,imFull){
+  if( imHappy && imFull){
+    console.log("dinner was good")
+  }
+}
 
-
+twoTrue(true,true)
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
+const oneTrue = function (imHappy, imFull){
+  if(imHappy === false && imFull === true)
+  console.log("im not happy")
+}
 
-
-
+oneTrue(false,true)
 // Write a JavaScript program that runs when both things are not true.  
+const twoFalse = function (imHappy, imFull){
+  if(imHappy === false && imFull === false)
+  console.log("im hangry")
+}
 
+twoFalse(false,false)
 // ***************************
 //         PART TWO
 // ***************************
