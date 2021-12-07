@@ -49,6 +49,7 @@ stringToNum("12")
  const dataSorter = function (myValue) {
    if (typeof(myValue) === "boolean") {
    return ("Its a boolean")}
+   if (typeof(myvalue))
   }
  
    
