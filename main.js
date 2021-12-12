@@ -49,9 +49,18 @@ stringToNum("12")
  const dataSorter = function (myValue) {
    if (typeof(myValue) === "boolean") {
    return ("Its a boolean")}
-   if (typeof(myvalue))
-  }
- 
+   else if (typeof(myValue) === "Null") {
+    return ("Its Null")}
+    else if (typeof(myValue) === "Undefined") {
+      return ("Its Undefined")}
+    else if (typeof(myValue) === "Number") {
+      return ("Its a Number")}
+    else if (typeof(myValue) === "NaN") {
+      return ("Its a NaN")}
+    else {
+      return ("It's a string")}
+    }
+
    
 dataSorter(true)
 
